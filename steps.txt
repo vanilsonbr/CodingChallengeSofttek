@@ -1,0 +1,26 @@
+passo 1: reordenar as termos de uma forma que formem palavras em inglês
+passo 2: ordenar as palavras de forma
+
+term: a part of the sheet of paper between the | (pipe)
+
+[THIS ALGORITH2 IS PROBABILISTIC AND NEED ADJUSTMENTS, IT IS JUST AN IDEA]
+ALGORITHM2 (is yet to be develop): an algorithm that compares a set of objects {S1,S2,...,Sn} and displays a number next
+    which is the index of similarity of all those objects using a function compare(X,Y), where X and Y are objects.
+    In this specific problem, compare() will be a number M which is the diference between all the numbers inside X and Y.
+    Example: consider three arrays A = [0,10,5,4] and B = [0,5,null,null] and C = [10,6,2,null]
+        compare(A,B) = abs(0-0) + abs(10-5) + (0) + (0) = 5
+        compare(A,C) = abs(0-10) + abs(10-6) + abs(5-2) + (0) = 17
+     In this case, A and B seems to be most similar than A and C
+
+MACRO STEPS:
+    1. reorder the terms in such a way that it forms words in english (considering a english dictionary as source)
+        1.1. use the greedy algorithm to find the first matches in every single line of the input matrix
+        1.2. reorder all the columns by using ALGORITHM2 and run the greedy algorith again
+        1.3. run the abover minor steps until we have all of the lines reach a similarity level acceptable and be considered the right answer
+    2. reorder the words in such a way that they respect the english grammar
+    3. reorder the words of the second step in such a way that the full sentence has semanthic
+
+THINGS TO BE DONE TILL THE END OF THE CHALLENGE
+* check the complexity of the algorithm
+* run tests on the algorithm
+* document the next steps
