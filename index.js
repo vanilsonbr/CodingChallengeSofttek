@@ -1,22 +1,4 @@
-/*
-var fs = require('fs');
-
-var distinct = array => array.filter((value,index,that) => that.indexOf(value) == index);
-
-fs.readFile('dict.txt', 'utf8', (err,data) => {
-    var dictionary = data.split(/[:.,\s]+[-=]+|[=-]+|[.:]+|[{}]+|[\r]+|[\n]+|[\r\n]+|[\s\n]+|[\n\s]+|[()]+/)
-                         .filter(x => x.trim()!=="")
-                         .filter(x => !isFinite(x) );
-    dictionary = dictionary.map(x => x.toLowerCase().replace(/[,.'"?!]/g,''));
-    dictionary = distinct(dictionary);
-
-
-    //dictionary = dictionary.filter(term => ['.','',',',':',] .indexOf(term.trim()) == -1);
-    var x = 1;
-});
-*/
-
-Array.prototype.contains = (term) => this.indexOf(term) != -1;
+//Array.prototype.contains = (term) => this.indexOf(term) != -1;
 
 var dictionary = ['Claude','Shannon','founded','information',
 'theory',,'which','is','the','basis','of ',
